@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 360" width="280" height="360">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g id="divisions" filter="url(#glow)">
+    <!-- 1. Rangpur Division (Purple #8B5CF6) -->
+    <path id="div-rangpur" data-name="Rangpur" data-sales="36,400"
+          d="M 48 18 C 55 12, 65 14, 75 16 C 85 20, 98 24, 108 30 C 104 45, 100 62, 96 86 C 82 85, 70 82, 58 78 C 38 72, 28 62, 26 50 C 26 38, 36 26, 48 18 Z"
+          fill="#8B5CF6" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <!-- 2. Rajshahi Division (Orange #F59E0B) -->
+    <path id="div-rajshahi" data-name="Rajshahi" data-sales="76,800"
+          d="M 26 50 C 38 62, 58 78, 58 78 C 70 82, 82 85, 96 86 C 98 102, 104 120, 108 138 C 96 148, 78 158, 58 152 C 38 146, 18 130, 14 110 C 12 90, 18 70, 26 50 Z"
+          fill="#F59E0B" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <!-- 3. Mymensingh Division (Lime #84CC16) -->
+    <path id="div-mymensingh" data-name="Mymensingh" data-sales="22,500"
+          d="M 108 30 C 128 32, 150 35, 172 38 C 170 54, 166 72, 160 88 C 145 92, 128 90, 114 88 C 104 88, 98 86, 96 86 C 100 62, 104 45, 108 30 Z"
+          fill="#84CC16" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <!-- 4. Sylhet Division (Dark Slate #475569) -->
+    <path id="div-sylhet" data-name="Sylhet" data-sales="42,760"
+          d="M 172 38 C 196 40, 222 45, 238 52 C 248 68, 250 92, 244 116 C 228 126, 206 130, 188 126 C 182 108, 176 96, 160 88 C 166 72, 170 54, 172 38 Z"
+          fill="#475569" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <!-- 5. Dhaka Division (Emerald Green #10B981) -->
+    <path id="div-dhaka" data-name="Dhaka" data-sales="1,25,450"
+          d="M 96 86 C 114 88, 128 90, 160 88 C 176 96, 182 108, 188 126 C 184 146, 178 168, 172 188 C 152 198, 134 204, 118 198 C 112 180, 108 158, 108 138 C 104 120, 98 102, 96 86 Z"
+          fill="#10B981" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round"/>
+
+    <!-- 6. Khulna Division (Crimson Red #EF4444) -->
+    <path id="div-khulna" data-name="Khulna" data-sales="54,230"
+          d="M 58 152 C 78 158, 96 148, 108 138 C 108 158, 112 180, 118 198 C 116 225, 114 255, 112 284 C 92 286, 68 282, 48 274 C 38 245, 34 205, 38 178 C 44 162, 50 156, 58 152 Z"
+          fill="#EF4444" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <!-- 7. Barishal Division (Cyan #06B6D4) -->
+    <path id="div-barishal" data-name="Barishal" data-sales="28,900"
+          d="M 118 198 C 134 204, 152 198, 172 188 C 170 215, 166 248, 158 288 C 142 292, 124 290, 112 284 C 114 255, 116 225, 118 198 Z"
+          fill="#06B6D4" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <!-- 8. Chattogram Division (Royal Blue #0284C7) -->
+    <path id="div-chattogram" data-name="Chattogram" data-sales="98,320"
+          d="M 188 126 C 206 130, 228 126, 244 116 C 252 145, 258 185, 254 228 C 248 268, 238 310, 228 348 C 220 348, 214 330, 208 300 C 196 260, 184 220, 172 188 C 178 168, 184 146, 188 126 Z"
+          fill="#0284C7" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- City Dots & Labels -->
+  <g fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="800" text-anchor="middle">
+    <!-- Dhaka Pin -->
+    <circle cx="138" cy="142" r="4.5" fill="#ffffff" stroke="#10B981" stroke-width="2"/>
+    <text x="138" y="156" fill="#064e3b">DHAKA</text>
+
+    <!-- CTG Pin -->
+    <circle cx="216" cy="228" r="4" fill="#ffffff" stroke="#0284C7" stroke-width="2"/>
+    <text x="216" y="242" fill="#075985">CTG</text>
+
+    <!-- Rajshahi Pin -->
+    <circle cx="54" cy="108" r="3.5" fill="#ffffff" stroke="#F59E0B" stroke-width="1.8"/>
+    <text x="54" y="122" fill="#78350f">RAJ</text>
+
+    <!-- Khulna Pin -->
+    <circle cx="74" cy="218" r="3.5" fill="#ffffff" stroke="#EF4444" stroke-width="1.8"/>
+    <text x="74" y="232" fill="#7f1d1d">KHL</text>
+
+    <!-- Sylhet Pin -->
+    <circle cx="210" cy="82" r="3.5" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+    <text x="210" y="96" fill="#1e293b">SYL</text>
+  </g>
+</svg>

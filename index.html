@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CARE ANIMAL HEALTH — VET360 ERP</title>
+  <link rel="stylesheet" href="style.css?v=inv-89" />
+</head>
+<body>
+  <div id="login" class="login">
+    <form class="lcard" id="login-form" autocomplete="off">
+      <h1 id="login-co-name">CARE ANIMAL HEALTH</h1>
+      <div class="tag" id="login-erp-tag">VET360 ERP</div>
+      <p class="sub">Veterinary Pharmaceutical Management System</p>
+      <label class="fld">User ID<input id="u" value="admin" autocomplete="off" /></label>
+      <label class="fld">Password<input id="p" type="password" value="Vet360#Admin" autocomplete="new-password" /></label>
+      <div class="err" id="err"></div>
+      <button class="btn p block" type="submit">Sign In</button>
+      <div class="hint">admin / Vet360#Admin<br/>manager / Vet360#Mgr<br/>mpo / Vet360#Mpo</div>
+      <div style="margin-top:14px;text-align:center">
+        <a href="care-animal-health-vet360-trial.zip" download="care-animal-health-vet360-trial.zip" style="color:#38bdf8;font-size:12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px">
+          <span>📥</span> Download Full Client ZIP Package
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside>
+      <div class="sidebar-brand-box">
+        <div style="display:flex;align-items:center;gap:10px;padding:14px 14px 10px">
+          <div class="sys-badge-icon" id="aside-sys-logo">
+            <span>🐾</span>
+          </div>
+          <div>
+            <b style="font-size:16px;font-weight:900;color:#fff;letter-spacing:.03em;display:block;line-height:1.2">VET360 ERP</b>
+            <span style="font-size:10.5px;color:#38bdf8;font-weight:700;letter-spacing:.04em;text-transform:uppercase;display:block" id="aside-sys-subtitle">CARE ANIMAL HEALTH</span>
+          </div>
+        </div>
+        <div style="padding:0 12px 10px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#94a3b8;border-bottom:1px solid rgba(255,255,255,0.1)">
+          <span style="display:flex;align-items:center;gap:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:145px">
+            <span style="width:7px;height:7px;border-radius:50%;background:#10b981;display:inline-block;flex:none"></span>
+            <span id="who-mini" style="color:#e2e8f0;font-weight:600">Md. Rahim Ahmed</span>
+          </span>
+          <span class="pill pb" style="font-size:9.5px;padding:1px 6px">Online</span>
+        </div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="st" style="display:none">
+        <span id="who"></span>
+      </div>
+      <div class="sidebar-footer" style="padding:10px 14px;border-top:1px solid rgba(255,255,255,0.12);margin-top:auto">
+        <a href="#" class="nav-logout-btn" onclick="return V.logout()" style="display:flex;align-items:center;gap:8px;color:#cbd5e1;text-decoration:none;font-size:13px;font-weight:700">
+          <span>🚪</span> Logout
+        </a>
+      </div>
+    </aside>
+    <main>
+      <div id="hdr-preview" style="display:none"></div>
+      <div class="page" id="page"></div>
+    </main>
+    <button id="btn-out" style="display:none" onclick="V.logout()"></button>
+  </div>
+  <div id="modal"></div>
+  <div class="toast" id="toast"></div>
+  <div id="print-root" class="print-root hidden"></div>
+  <script src="app.js?v=inv-89"></script>
+</body>
+</html>
